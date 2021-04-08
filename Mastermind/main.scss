@@ -1,0 +1,133 @@
+$white: white;
+$black: black;
+$red: red;
+$grey: grey;
+$orange: orange;
+$yellow: yellow;
+$blue: blue;
+$green: green;
+$brown: brown;
+$purple: purple;
+$cyan: cyan; // tartalék
+$bgcolor: rgb(182, 180, 180);
+$bodycolor: rgb(211, 210, 210);
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-size: 10px;
+	background-color: $bodycolor;
+}
+.wrapper {
+	padding: 2rem;
+	margin: 0 auto;
+	text-align: center;
+
+	h1 {
+		font-size: 2.5rem;
+		padding-bottom: 1.5rem;
+	}
+	.container {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.field {
+	width: 200px;
+
+	display: flex;
+	flex-wrap: wrap;
+	&__item {
+		width: 40px;
+		padding: 20px;
+		border-radius: 50%;
+		border: 1px solid gray;
+		margin: 2px auto;
+	}
+}
+
+/* Választási lehetőségek */
+.attempt {
+	width: 100px;
+	margin-left: 1.3rem;
+	display: flex;
+	flex-wrap: wrap;
+
+	.small__item {
+		width: 20px;
+		padding: 10px;
+		border-radius: 50%;
+		border: 1px solid gray;
+		margin: 12px auto;
+	}
+}
+.pick {
+	@extend .field;
+	padding-top: 1.5rem;
+	margin: 0 auto;
+	width: 200px;
+	cursor: pointer;
+	.field__item {
+		transition: 0.3s;
+		&:hover {
+			transform: scale(1.15);
+		}
+	}
+}
+
+.secret {
+	display: flex;
+	width: 200px;
+	margin: 0 auto;
+	padding-bottom: 1.5rem;
+}
+
+/* Start gomb */
+.btn {
+	margin-top: 2rem;
+	padding: 0.5rem 2rem;
+	border: none;
+	cursor: pointer;
+	transition: 0.5s;
+	&:hover {
+		background-color: aqua;
+	}
+}
+
+.red {
+	background-color: $red;
+}
+.grey {
+	background-color: $grey;
+}
+.orange {
+	background-color: $orange;
+}
+.yellow {
+	background-color: $yellow;
+}
+.blue {
+	background-color: $blue;
+}
+.green {
+	background-color: $green;
+}
+.brown {
+	background-color: $brown;
+}
+.purple {
+	background-color: $purple;
+}
+.cyan {
+	background-color: $cyan;
+}
+.white {
+	background-color: $white;
+}
+.black {
+	background-color: $black;
+}
