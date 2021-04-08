@@ -47,6 +47,8 @@ document.querySelector("form").addEventListener("submit", (event) => {
 		})
 		.catch((error) => {
 			console.log("Hiba");
-			document.querySelector(".js-cocktails").innerHTML = `Error: ${error}`;
+			document.querySelector(
+				".js-cocktails"
+			).innerHTML = `Error: Choose another letter!`;
 		});
 });
