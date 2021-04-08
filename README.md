@@ -1,6 +1,6 @@
 # API query from https://www.thecocktaildb.com/
 
-Query coctails with the starting letter. U Built with HTML, JS, Bootstrap
+Query coctails with the starting letter. Built with HTML, JS, Bootstrap
 
 ## Hosting
 
