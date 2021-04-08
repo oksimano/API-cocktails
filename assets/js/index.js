@@ -24,7 +24,7 @@ document.querySelector("form").addEventListener("submit", (event) => {
 	fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?f=${option}`)
 		.then((result) => result.json()) // from result makes a json
 		.then((data) => {
-			const cocktailList = data.drinks; //Array from API contains cocktail with choosing letter
+			const cocktailList = data.drinks; //Array from API contains cocktail with choosing a letter
 			const markup = cocktailList // Make a markup
 				.map(
 					(cocktail) => `
@@ -47,6 +47,8 @@ document.querySelector("form").addEventListener("submit", (event) => {
 		})
 		.catch((error) => {
 			console.log("Hiba");
-			document.querySelector(".js-cocktails").innerHTML = `Error: ${error}`;
+			document.querySelector(
+				".js-cocktails"
+			).innerHTML = `Error: Choose another letter!`;
 		});
 });
