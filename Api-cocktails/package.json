@@ -15,7 +15,7 @@
 	"bugs": {
 		"url": "https://github.com/oksimano/API-cocktails/issues"
 	},
-	"homepage": "https://github.com/oksimano/API-cocktails#readme",
+	"homepage": "https://oksimano.github.io/API-cocktails",
 	"devDependencies": {
 		"gh-pages": "^3.1.0"
 	}
