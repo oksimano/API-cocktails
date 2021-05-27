@@ -28,19 +28,20 @@ document.querySelector("form").addEventListener("submit", (event) => {
 			const markup = cocktailList // Make a markup
 				.map(
 					(cocktail) => `
-                    <div class="card mt-4 mx-auto">
-                    <h2 class="card-title  p-2">${cocktail.strDrink}</h2>
-                    <img src="${cocktail.strDrinkThumb}"
-                    alt="${cocktail.strDrink}"
-					class="card-img-top"></img>
-                    <p class="  p-2">${cocktail.strAlcoholic}</p>
-                    <p class="  p-2">${cocktail.strCategory}</p>
-                    <h5 class="card-title  p-2">Ingredients:</h5>
-					<ul "list-group list-group-flush  p-2"> ${cocktailIngredients(cocktail)}</ul>
-                   
-                    <p class=" p-2">${cocktail.strInstructions}</p>
-                    </div>
-            `
+						<div class="card mt-4 mx-auto">
+							<h2 class="card-title  p-2">${cocktail.strDrink}</h2>
+							<img src="${cocktail.strDrinkThumb}"
+							alt="${cocktail.strDrink}"
+							class="card-img-top"></img>
+							<p class="  p-2">${cocktail.strAlcoholic}</p>
+							<p class="  p-2">${cocktail.strCategory}</p>
+							<h5 class="card-title  p-2">Ingredients:</h5>
+							<ul class="list-group list-group-flush  p-2"> ${cocktailIngredients(
+								cocktail
+							)}</ul>
+							<p class=" p-2">${cocktail.strInstructions}</p>
+						</div>
+					`
 				)
 				.join("");
 			document.querySelector(".js-cocktails").innerHTML = markup;
